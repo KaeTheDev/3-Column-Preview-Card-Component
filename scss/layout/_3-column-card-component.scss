@@ -1,0 +1,61 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: auto;
+}
+.card {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.card__image {
+  width: 64px;
+  height: 40px;
+  margin-bottom: 35px;
+}
+
+.card__title {
+  margin-bottom: 25px;
+}
+
+.card__description {
+  margin-bottom: 25px;
+}
+
+.card--sedan {
+  background-color: $bright-orange;
+}
+
+.card--suv {
+  background-color: $dark-cyan;
+}
+
+.card--luxury {
+  background-color: $very-dark-cyan;
+}
+
+.card__button {
+  width: 146px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: $light-gray;
+  border: none;
+}
+
+.card__button:hover {
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid $white;
+  color: $white;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    flex-direction: row; 
+    justify-content: center; 
+  }
+}
